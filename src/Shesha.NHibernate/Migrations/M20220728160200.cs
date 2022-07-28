@@ -11,7 +11,7 @@ namespace Shesha.Migrations
         public override void Up()
         {
             Alter.Table("Frwk_MobileDevices")
-                 .AddColumn("ReadRouteName").AsString("100").Nullable();
+                 .AddColumn("ReadRouteName").AsString().Nullable();
         }
         public override void Down()
         {
